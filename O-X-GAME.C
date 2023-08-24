@@ -178,6 +178,19 @@ void computer()
   else if(board[4]==board[6]&&board[2]==NULL&&board[4]!=NULL)
     board[2]='X';
 
+   else if(board[4]=='O')
+   {
+     for(j=0;j<=8;j++)
+     {
+       if(board[j]==NULL)
+       {
+	 board[j]='X';
+	 break;
+       }
+       j++;
+     }
+   }
+
   else if(board[0]=='O'||board[2]=='O'||board[6]=='O'||board[8]=='O')
    {
     if(board[4]==NULL)
