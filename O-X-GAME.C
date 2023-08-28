@@ -28,6 +28,7 @@ void computer()
   char board[9]={0},winner=NULL;
   int i=0,j,user_in,flag=1;
   do{
+winner=NULL;
   for(i=0;i<9;i++)
    board[i]=NULL;
   i=0;
@@ -321,6 +322,7 @@ void multiplayer()
   char board[9]={0},winner=NULL;
   int i=0,user_in,flag=1;
   do{
+winner=NULL;
   for(i=0;i<9;i++)
    board[i]=NULL;
   i=0;
