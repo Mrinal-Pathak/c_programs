@@ -179,7 +179,7 @@ winner=NULL;
   else if(board[4]==board[6]&&board[2]==NULL&&board[4]!=NULL)
     board[2]='X';
 
-   else if(board[4]=='O')
+   else if(board[4]=='O'&&(board[0]==NULL||board[2]==NULL||board[6]==NULL||board[8]==NULL))
    {
      for(j=0;j<=8;j++)
      {
